@@ -1,0 +1,18 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import Counter
+
+s = int(input())
+col = Counter(map(int,input().split())) #count the number of times an element is repeated
+total = 0
+
+for i in range(int(input())): #takes the third input
+    val = input().split()     #takes successive inputs 
+    if int(val[0]) in col.keys():  #check if a the key is present in col  
+        if col[int(val[0])] > 0:   # if present  add it to total
+            total += int(val[1])
+            col[int(val[0])] -= 1  #and decrease 1 from the value
+        else:
+            del col[int(val[0])] #if the element has a value of 0 delete the key                   
+
+print(total)               
+
