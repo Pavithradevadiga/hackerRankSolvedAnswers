@@ -1,0 +1,6 @@
+a = input()
+b = set(list(map(int,input().split())))
+c = input()
+d = set(list(map(int,input().split())))
+
+print(*sorted(b^d),sep='\n')
