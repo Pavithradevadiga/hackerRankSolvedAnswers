@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import email.utils, re
+
+n = int(input())
+for i in range(n):
+    b = input()
+    lst = email.utils.parseaddr(b)
+    match = bool(re.search(r'^[a-zA-Z]+[a-zA-Z0-9_.+-]+@[A-Za-z]+\.[A-Za-z]{1,3}$',lst[1]))
+    if match:
+        print(email.utils.formataddr(lst))
+
+
