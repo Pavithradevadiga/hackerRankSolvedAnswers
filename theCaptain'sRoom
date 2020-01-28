@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import defaultdict
+n = int(input())
+d = defaultdict(int)
+
+l = input().split()
+
+for i in l:
+    d[i] += 1
+
+
+for k,v in d.items():
+    if v == 1:
+        print(k)
