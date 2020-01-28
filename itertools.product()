@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import product
+
+lst = []
+
+n = list(map(int,input().split()))
+m = list(map(int,input().split()))
+
+print(*list(product(n,m)))
