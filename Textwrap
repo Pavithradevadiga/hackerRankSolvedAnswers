@@ -1,0 +1,6 @@
+
+
+strng = ''
+def wrap(string, max_width):
+    lst = textwrap.wrap(string,width=max_width)
+    return '\n'.join(lst)   
