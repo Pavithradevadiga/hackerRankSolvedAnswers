@@ -1,0 +1,17 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import Counter
+
+s = int(input())
+col = Counter(map(int,input().split()))
+total = 0
+
+for i in range(int(input())):
+    val = input().split()
+    if int(val[0]) in col.keys():
+        if col[int(val[0])] > 0:
+            total += int(val[1])
+            col[int(val[0])] -= 1
+        else:
+            del col[int(val[0])] 
+
+print(total)               
