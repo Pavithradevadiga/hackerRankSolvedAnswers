@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+m,n = map(int,input().split())
+s = []
+for _ in range(n):
+    s.append(list(map(float,input().split())))
+
+lst = list(zip(*s))
+
+for i in lst:
+    print(round(sum(i)/len(i),1))
