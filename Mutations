@@ -1,0 +1,9 @@
+
+def mutate_string(string, position, character):
+    fstring = string
+    return fstring[0:position]+character+fstring[(position+1):]
+
+
+    
+
+if __name__ == '__main__':
