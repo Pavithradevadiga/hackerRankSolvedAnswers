@@ -1,0 +1,34 @@
+if __name__ == '__main__':
+    names = []
+    scores = []
+    for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        names.append(name)
+        scores.append(score)
+
+originalscores = scores.copy()
+originalscores.sort()
+
+
+for i in originalscores:
+    if i != min(originalscores):
+        secondlow = i  
+        break 
+
+startat = -1
+inorder = []
+for i in scores:
+    if i == secondlow:
+        loc = scores.index(i,startat+1)
+        inorder.append(names[loc])
+        startat = loc
+    
+
+inorder.sort()
+for i in inorder:
+    print(i)    
+    
+         
+       
+
