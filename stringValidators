@@ -1,0 +1,40 @@
+if __name__ == '__main__':
+    s = input()
+
+i = s.split(' ')
+atalpha = False
+for i in s:
+    if i.isalpha() == True:
+        atalpha = True
+        break
+print(atalpha) 
+
+
+
+atalpha = False
+for j in i:
+   if j.isalpha() == True:
+        atalpha = True
+        break
+print(atalpha) 
+
+atdig = False
+for j in s:
+    if j.isdigit() == True:
+        atdig = True
+        break
+print(atdig)        
+
+atlow = False
+for j in s:
+    if j.islower() == True:
+        atlow = True
+        break
+print(atlow) 
+
+atup = False
+for j in s:
+    if j.isupper() == True:
+        atup = True
+        break
+print(atup)        
