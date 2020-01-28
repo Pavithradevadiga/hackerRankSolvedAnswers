@@ -1,0 +1,18 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+
+
+print(round(45,2))
+for keys,value in student_marks.items():
+    if keys == query_name:
+        k = value
+        avg = sum(k)/len(k)
+        print(round(avg,2))
+        
+
