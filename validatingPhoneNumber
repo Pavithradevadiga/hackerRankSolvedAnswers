@@ -1,0 +1,12 @@
+import re;
+n = int(input());
+lst = []
+for i in range(n):
+    b = input()
+    lst.append(b)
+for i in lst:    
+    match = re.search('^[7|8|9]\d{9}$',i)    
+    if match:
+        print('YES')
+    else:
+        print('NO')    
