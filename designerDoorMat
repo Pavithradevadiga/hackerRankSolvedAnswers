@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,m=map(int,input().split())
+
+def mat(n,m):
+    lst = []
+    for i in range(int(n/2)):
+        lst.append(((((i*2)+1)*'.|.').center(m,'-')))
+    lst2 = lst[::-1]
+    lst.append('WELCOME'.center(m,'-'))
+    lst.extend(lst2)
+    return('\n'.join(lst))   
+
+print(mat(n,m))     
+
+       
