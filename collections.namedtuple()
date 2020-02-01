@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from collections import namedtuple
+n= int(input())
+cat = input().split()
+total = 0
+grade = namedtuple('grade',cat)
+for _ in range(n):
+    total += int(grade._make(input().split()).MARKS)
+print(total/n)   
