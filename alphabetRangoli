@@ -1,0 +1,20 @@
+import string
+
+def print_rangoli(size):
+    alpha = string.ascii_lowercase
+    lst = []
+    for i in range(size-1,-1,-1):
+        sb = alpha[i:n]
+        sc = sb[::-1]
+        sa = sc[:-1]
+        lst.append(sa+sb)
+    s = '-'.join(lst[-1])
+    for i in lst[:-1]:
+        print(('-'.join(i).center(len(s),'-')))
+    for i in lst[::-1]:
+        print(('-'.join(i).center(len(s),'-')))    
+    
+
+        
+
+if __name__ == '__main__':
