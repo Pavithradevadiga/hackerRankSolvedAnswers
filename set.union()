@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+eng = int(input())
+engstu = set(map(int,input().split()))
+fre = int(input())
+frestu = set(map(int,input().split()))
+print(len(engstu.union(frestu)))
+
