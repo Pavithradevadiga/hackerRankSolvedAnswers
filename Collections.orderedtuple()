@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import OrderedDict,defaultdict
+import re
+
+n = int(input())
+groceries = OrderedDict()
+groceries = defaultdict(int)
+for _ in range(n):
+    lst = re.split('(\d+)',input().strip())
+    groceries[lst[0].strip()] += int(lst[1])
+
+
+for key,value in groceries.items():
+    print(key,value)
