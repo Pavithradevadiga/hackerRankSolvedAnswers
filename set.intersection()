@@ -1,0 +1,6 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = input()
+nset= set(input().split())
+m = input()
+mset = set(input().split())
+print(len(nset.intersection(mset)))
