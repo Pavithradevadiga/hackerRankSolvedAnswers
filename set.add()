@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+n = int(input())
+thisset = set()
+for _ in range(n):
+    thisset.add(input())
+
+print(len(thisset))    
