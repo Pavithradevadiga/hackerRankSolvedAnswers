@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+thisset = set(map(int,input().split()))
+thissett = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,24,52}
+for _ in range(int(input())):
+    lst = list(input().split())
+    lst1 = set(map(int,input().split()))
+    getattr(thisset,lst[0])(lst1)
+
+print(sum(thisset))    
+    
+    
