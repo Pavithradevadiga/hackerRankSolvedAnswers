@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import deque
+n = int(input())
+d = deque()
+for _ in range(n):
+    b = list(input().split())
+    if len(b) > 1:
+        getattr(d,b[0])(int(b[1]))
+    elif b[0] == 'pop':
+        d.pop()  
+    else:
+        d.popleft()      
+print(*d)        
+       
