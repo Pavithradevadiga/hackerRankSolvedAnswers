@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+for _ in range(int(input())):
+    acount = int(input())
+    a = list(input().split())
+    bcount = int(input())
+    b = list(input().split())
+    y = [x in b for x in a]
+    print(all(y))
