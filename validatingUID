@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import re
+cases = int(input())
+
+for case in range(cases):
+    pattern = re.compile('(([A-Z{2,}0-9{3,}])){10}')
+    pattern1 = re.compile(r'.*(.).*\1')
+    inp = input()
+    if bool(re.match(pattern,inp)) and not bool(re.match(pattern1,inp)):
+        print('Valid')
+    else:
+        print('Invalid')    
