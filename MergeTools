@@ -1,0 +1,20 @@
+import re
+from collections import defaultdict
+
+def merge_the_tools(string, k):
+    start = 0
+    end = k
+    lst = []
+    for i in range(int(len(string)/k)):
+        if string[start:end] != '':
+            lst.append(string[start:end])
+            start = end
+            end = start+k               
+    for i in lst:
+        dictionary = defaultdict(int)
+        for j in i:
+            dictionary[j] += 1
+        print(''.join(list(dictionary.keys())))    
+        
+
+if __name__ == '__main__':
