@@ -1,0 +1,24 @@
+def fun(s):
+    try:
+        username,remain = s.split('@')
+        domain,extension = remain.split('.')
+    except:
+        return(False)  
+    if (len(username) == 0 or len(domain) == 0 or len(extension) == 0 or len(extension) > 3):
+        return(False)    
+    for i in username:
+        if i.isalpha() or i.isalnum() or i == '-' or i == '_':
+            pass
+        else:
+            return(False)
+    if domain.isalpha() or domain.isalnum():
+        pass
+    else:
+        return(False)
+    return True            
+                   
+            
+
+
+
+def filter_mail(emails):
