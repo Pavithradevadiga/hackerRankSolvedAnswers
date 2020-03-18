@@ -1,0 +1,7 @@
+import numpy
+n = map(int,input().split())
+num = tuple(n)
+print(numpy.zeros(num,dtype=numpy.int))
+print(numpy.ones(num,dtype=numpy.int))
+
+
