@@ -1,0 +1,12 @@
+import numpy
+
+n,m = map(int,input().split())
+arr = []
+for _ in range(n):
+    arr.append(list(map(int,input().split())))
+trans = numpy.transpose(numpy.asarray(arr))
+print(trans)
+print(numpy.asarray(arr).flatten())    
+
+
+
