@@ -1,0 +1,4 @@
+import numpy
+
+arr = numpy.reshape(numpy.asarray(tuple(map(int,input().split()))),(3,3))
+print(arr)
