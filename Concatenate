@@ -1,0 +1,8 @@
+import numpy
+
+n,m,p = map(int,input().split())
+arra1 = numpy.array([input().split() for i in range(n+m)],int)   
+print(arra1)
+
+
+
